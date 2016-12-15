@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Range {
     public static void main(String[] s) {
-        Observable.range(10,15).delay(1, TimeUnit.SECONDS, Schedulers.immediate()).subscribe(new Action1<Integer>() {
+        Observable.range(10,15).delay(200, TimeUnit.MILLISECONDS, Schedulers.immediate()).subscribe(new Action1<Integer>() {
             @Override
             public void call(Integer integer) {
                 System.out.println(integer);
